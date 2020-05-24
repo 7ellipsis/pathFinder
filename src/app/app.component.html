@@ -1,0 +1,30 @@
+<div class="clicks">
+  <ul>
+    <li><button class="brn btn-info" (click)="dijkstraPath()">Dijkstras'</button></li>
+    <li><button class="brn btn-info" (click)="dfsPath()">Depth First Search</button></li>
+    <li><button class="brn btn-info" (click)="bfsPath()">Breadth First Search</button></li>
+    <li><button class="brn btn-info" (click)="astarPath('eucledian')">A star [Eucledian]</button></li>
+    <li><button class="brn btn-info" (click)="astarPath('manhatten')">A star [Manhatten]</button></li>
+    <li><button class="brn btn-info" (click)="astarPath('chebyshev')">A star [Chebyshev]</button></li>
+    <li><button class="brn btn-info" (click)="astarPath('octile')">A star [Octile]</button></li>
+    <li><select (change)="speed($event.target.value)" class="sel">
+      <option value=250>Slow</option>
+      <option value=30 selected="selected">Medium</option>
+      <option value=5>Fast</option>
+    </select></li>
+    <li style="float: right;"><button class="brn btn-info" (click)="reset()">reset</button></li>
+  </ul>
+
+  <div id="info">
+    <span id="algo"></span><br>
+    <span id="visit"> </span><br>
+    <span id="length"></span><br>
+  </div>
+  <div id="container" (mouseup)=out()>
+    <div *ngFor="let x of array let i=index;" class="grid">
+      <div class='box {{"_"+(i*25+j)}}' *ngFor="let y of x let j=index" id="{{i*25+j}}" (mousedown)="wall(y,i,j)"
+        (mouseover)="move(y,i,j)" (mouseup)="drop(i,j)">
+      </div>
+    </div>
+  </div>
+</div>

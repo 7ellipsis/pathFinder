@@ -1,0 +1,150 @@
+.box
+{
+ width: 20px;
+ height: 20px;
+ border:0.5px solid;
+ border-color: cadetblue;
+ 
+}
+.wall
+{
+  animation-name: wallAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes wallAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color:	rgb(5, 113, 255);
+    border-radius: 100px;
+    border-color:rgb(5, 113, 255);
+  }
+  50% {
+    transform: scale(1.5);
+    background-color:	rgb(1, 67, 153);
+    border-radius: 10px;
+    border-color:rgb(1, 67, 153);
+  }
+  100% {
+    transform: scale(1);
+    background-color:	rgb(1, 26, 73);
+    border-radius: 0px;
+    border-color:rgb(1, 26, 73);
+  }
+}
+.grid{
+    display: inline-grid;
+    margin-top: 30px;
+}
+#container
+{
+   margin: auto;
+text-align: center;
+}
+
+.node-visited {
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(0.1);
+      background-color: rgb(3, 3, 151);
+      border-color:rgb(3, 3, 151);
+      border-radius: 100%;
+    }
+  
+    25% {
+        transform: scale(0.5);
+      background-color: rgba(1, 1, 83, 0.75);
+      border-radius: 60%;
+      border-color:rgba(1, 1, 83, 0.75);
+    }
+
+    50% {
+        transform: scale(1.2);
+      background-color: rgba(17, 104, 217);
+      border-radius: 30%;
+      border-color:rgba(17, 104, 217);
+    }
+  
+    75% {
+      transform: scale(1.77);
+      background-color: rgba(0, 217, 159, 0.75);
+      border-radius: 10%;
+      border-color:rgba(0, 217, 159, 0.75);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color:rgba(0, 190, 218);
+      border-radius: 0%;
+      border-color:rgba(0, 190, 218);
+    }
+  }
+  .node-shortest-path {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes shortestPath {
+    0% {
+      transform: scale(0.3);
+      background-color:	rgb(243, 117, 0);
+      border-radius: 10px;
+      border-color:rgb(243, 117, 0);
+    }
+  
+    50% {
+      transform: scale(1.4);
+      background-color:	rgb(5, 83, 226);
+      border-radius: 5px;
+      border-color:rgb(5, 83, 226);
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color:	rgb(231, 2, 98);
+      border-radius: 0px;
+      border-color:rgb(231, 2, 98);
+    }
+  }  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+.sel
+{
+  background-color: crimson;
+  width: 90px;
+  height:26px;
+}
+btn
+{
+  width:10%;
+  height: 10px;
+}
+li button:hover:not(.active) {
+  background-color: #111;
+}
+#info{
+  width: 150px;
+  color: white;
+  top:30px;
+  left:10px;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+}

@@ -148,3 +148,25 @@ li button:hover:not(.active) {
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+#path
+{
+  width:15px;
+  height:15px;
+  background-color: rgb(231, 2, 98);
+  display: inline-block;
+}
+#visited
+{
+ 
+  width:15px;
+  height:15px;
+  background-color: rgba(17, 104, 217);
+  display: inline-block;
+}
+#wall
+{
+  width:15px;
+  height:15px;
+  background-color: rgb(1, 26, 73);
+  display: inline-block;
+}

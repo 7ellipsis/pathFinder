@@ -15,10 +15,16 @@
     <li style="float: right;"><button class="brn btn-info" (click)="reset()">reset</button></li>
   </ul>
 
-  <div id="info">
+  <div id="info" style="float: left;"> 
     <span id="algo"></span><br>
     <span id="visit"> </span><br>
     <span id="length"></span><br>
+  </div>
+  <div id="info" style="float: right;"> 
+    Legend:<br>
+    <span id="wall"></span><span>Wall</span><br>
+    <span id="visited"> </span><span>Visited Node</span><br>
+    <span id="path"></span><span>Path Node</span><br>
   </div>
   <div id="container" (mouseup)=out()>
     <div *ngFor="let x of array let i=index;" class="grid">

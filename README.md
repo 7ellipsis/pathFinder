@@ -22,7 +22,7 @@ Walls can be created simplyy by clicking and hovering over desired cells.
 ![Walls](https://ibb.co/wJg7T25)
 Format: ![Alt Text](url)
 Different sppeds can be selected for the animations.
-![Algo](https://ibb.co/4pPVVWk)
+![Algo](https://github.com/7ellipsis/pathFinder/blob/master/src/algo.gif)
 Format: ![Alt Text](url)
 
 

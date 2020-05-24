@@ -1,7 +1,7 @@
 # Pathfinder
 PathFinder is a tool to visulise the internal working of path finding algorithms.  
 
-Algoriths Used  
+Algoriths Used:    
 A*(With 4 different heuristics)  
 DFS  
 BFS  

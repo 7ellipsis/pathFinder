@@ -1,6 +1,7 @@
 # Pathfinder
 PathFinder is a tool to visulise the internal working of path finding algorithms.  
 
+
 Algoriths Used:    
 A*(With 4 different heuristics)  
 DFS  
@@ -27,3 +28,9 @@ Different sppeds can be selected for the animations.
 
 # Working Demo
 https://jvmiprqjl.github.stackblitz.io/
+
+
+
+
+
+The gird used is undirected and all weights are set to 1. Diagonal traversal not present as it makes animations last for a small duration.

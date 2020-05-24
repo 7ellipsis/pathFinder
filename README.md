@@ -16,10 +16,10 @@ Bidirectional path finder
 
 # Features
 Start and End positions can be changed easily using drap and drop
-![Drag](https://ibb.co/XbxtrXV)
+![Drag](https://github.com/7ellipsis/pathFinder/blob/master/src/changepos.gif)
 Format: ![Alt Text](url)
 Walls can be created simplyy by clicking and hovering over desired cells.
-![Walls](https://ibb.co/wJg7T25)
+![Walls](https://github.com/7ellipsis/pathFinder/blob/master/src/walls.gif)
 Format: ![Alt Text](url)
 Different sppeds can be selected for the animations.
 ![Algo](https://github.com/7ellipsis/pathFinder/blob/master/src/algo.gif)
